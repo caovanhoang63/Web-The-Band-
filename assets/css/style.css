@@ -1,0 +1,317 @@
+/* Reset CSS */
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 10px 0;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+}
+p{
+    margin: 15px auto;
+}
+/* End */
+
+#main{
+
+}
+/* Begin: Heading */
+#header{
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+#nav {
+    display: inline-block;
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav li{
+    display: inline-block;
+    position: relative;
+}
+#nav li a{
+    padding: 0 16px;
+    line-height: 46px;
+    color: white;
+    text-decoration: none;
+}
+#nav > li > a{
+    text-transform: uppercase;
+}
+#nav .subnav li:hover ,
+#nav > li:hover > a{
+    display: inline-block;
+    color: black;
+    background-color: #ccc;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav{
+    min-width: 160px;
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+#nav .subnav li{
+    width: 100%;
+    background-color: #fff;
+}
+#nav .subnav a{
+    width: 100%;
+    color: black;
+    line-height: 38px;
+}
+#nav .nav-arrow-down{
+    font-size: 12px;
+}
+.search-button{
+    height: 100%;
+    float:right;
+    padding: 12px 24px;
+}
+.search-button:hover{
+    background-color: #f00;
+}
+.search-icon{
+    font-size: 18px;
+    color: #fff;
+}
+/* End: Heading */
+/* Begin: Slider */
+#slider {
+    background: url('/assets/img/chicago.jpg') top center / cover no-repeat;
+    margin-top: 46px;
+    padding-top: 50%;
+    position: relative;
+}
+#slider .text-content{
+    padding: 32px 0;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading{
+    font-size: 24px;
+}
+
+#slider .text-discription{
+    font-size: 15px;
+}
+/* End: Slider */
+/* Begin: Content */
+#content{
+
+}
+
+    /* Begin: About */
+#content #content-about{
+    max-width: 800px;
+    padding: 64px 16px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content-about h2{
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+#content-about .band-slogan{
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5);
+}
+#content-about .band-description{
+    text-align: justify;
+}
+#content-about #band-members{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 32px 0 !important; 
+}
+#content-about #band-members .band-member{
+}
+    /* End: About */
+    /* Begin: Tour */
+#tour{
+    padding: 64px 16px;
+    background-color: #000 !important;
+    color: #fff ;
+}
+#tour #tour-content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+#tour #tour-content h2{
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#tour #tour-content > p{
+    text-align: center;
+    font-style: italic;
+    color: #ccc;
+}
+#tour #tour-content li{
+    display: block;
+    background-color: #fff;
+    color: #757575;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 16px;
+}
+#tour .sold-out{
+    display: inline-block;
+    background-color: #f44336 !important;
+    padding: 0 8px;    
+    color: #fff !important;
+    line-height: 1.5;
+    font-size: 15px;
+    margin-left: 16px;
+}
+#tour .num-ticket{
+    background-color: #000;
+    line-height: 1.5;
+    font-size: 15px;
+    margin-right: 16px;
+    float: right !important;
+    padding: 0 8px;  
+    border-radius: 50%;
+    color: #fff;
+}
+#ticket-sold {
+    padding: 32px 0;
+    display: flex;
+}
+#ticket-sold .ticket{
+    display: block;
+    margin-bottom: 16px ;
+    padding: 0 8px;
+}
+#ticket-sold .ticket img{
+    vertical-align: middle;
+    width: 100%;
+}
+#ticket-sold .ticket .ticket-content{
+    padding: 0 16px;
+    background-color: #fff;
+}
+#ticket-sold .ticket-content h2{
+    display: inline-block;
+    color: #000;
+    margin: 15px 0 !; 
+    font-size: 15px !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+    text-align: left !important;
+    margin: 15px 0;
+}
+.content-black{
+    color: #000 !important;
+}
+#ticket-sold .ticket button{
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;   
+    margin-bottom: 16px;
+}
+#ticket-sold .ticket button:hover{
+    background-color: #ccc;
+    color: #000;
+}
+#ticket-sold p{
+    color: rgba(0, 0, 0, 0.8);
+    font-style:unset !important ;
+    text-align: left !important;
+    font-size: 15px;
+}
+    /* End: Tour */
+    /* Begin: Contact */
+#contact{
+    display: block;
+    max-width: 800px;
+    padding: 64px 16px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.opacity{
+    text-align: center;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.8);
+}
+#contact h2{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+#contact-content{
+    display: block;
+    padding: 24px 0;
+    font-size: 18px;
+}
+#contact-content p{
+    margin: 0;
+}
+#contact-content .contact-info{
+    display: block;
+    display: inline-block;
+    width: 49%;
+    margin-bottom:16px ;
+    clear: both; 
+}
+.padding-8{
+    display: inline-block;
+    width: 49%;
+}
+#contact-content #contact-form{
+    display: inline-block;
+    clear: both;
+    width: 49%;
+}
+#contact-content #contact-form input{
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+#contact-content #contact-form button{
+    float: right;
+    clear: both;
+
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;   
+    margin: 16px 0;
+}
+#contact-content #contact-form button:hover{
+    background-color: #ccc;
+    color: #fff; 
+}
+    /* End: Contact */
+/* End: Content */
+#footer{
+    padding: 64px 16px;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+}
+#footer a{
+    color: rgba(0, 0, 0, 0.8);
+}
